@@ -1,3 +1,12 @@
+###############################################
+# HARALD’S EXTENDED BLOCKLIST
+# Version: 1.0
+# Format: AdGuard / uBlock Origin compatible
+###############################################
+
+###############################################
+# GOOGLE / DOUBLECLICK / ADS
+###############################################
 ||googleads.g.doubleclick.net^
 ||pagead.l.doubleclick.net^
 ||pubads.g.doubleclick.net^
@@ -7,16 +16,30 @@
 ||googlesyndication.com^
 ||googletagservices.com^
 ||googletagmanager.com^
+||adservice.google.com^
+||adservice.google.de^
+||adservice.googlevideo.com^
 
+###############################################
+# YOUTUBE ADS / TRACKING
+###############################################
 ||youtubei.googleapis.com^
 ||youtube.googleapis.com^
 ||s.youtube.com^
 ||stats.youtube.com^
 ||stats.g.doubleclick.net^
-
 ||yt3.ggpht.com^
 ||ytimg.com^
+||redirector.googlevideo.com^
 
+# YouTube ad-serving patterns
+/rr[0-9]+---sn-.*\.googlevideo\.com$/
+/ad[0-9]+---sn-.*\.googlevideo\.com$/
+/.*-ad-.*\.googlevideo\.com$/
+
+###############################################
+# GOOGLE VIDEO SERVERS (GVT)
+###############################################
 ||gvt1.com^
 ||gvt2.com^
 ||gvt3.com^
@@ -26,7 +49,115 @@
 ||gvt9.com^
 ||gvt11.com^
 
-||redirector.googlevideo.com^
-/rr[0-9]+---sn-.*\.googlevideo\.com$/
-/ad[0-9]+---sn-.*\.googlevideo\.com$/
-/.*-ad-.*\.googlevideo\.com$/
+###############################################
+# META / FACEBOOK / INSTAGRAM TRACKING
+###############################################
+||facebook.com^$third-party
+||connect.facebook.net^
+||graph.facebook.com^
+||graph.instagram.com^
+||instagram.com^$third-party
+||fbcdn.net^$third-party
+||facebook.net^
+||meta.com^$third-party
+
+###############################################
+# TIKTOK TRACKING
+###############################################
+||tiktok.com^$third-party
+||analytics.tiktok.com^
+||log.tiktokv.com^
+||log.byteoversea.com^
+
+###############################################
+# SNAPCHAT TRACKING
+###############################################
+||sc-analytics.appspot.com^
+||snapads.com^
+||snapchat.com^$third-party
+
+###############################################
+# AMAZON / ALEXA TRACKING
+###############################################
+||amazon-adsystem.com^
+||aaxads.com^
+||aax.amazon-adsystem.com^
+||fls-na.amazon.com^
+||device-metrics-us.amazon.com^
+
+###############################################
+# MICROSOFT / WINDOWS TELEMETRY
+###############################################
+||vortex.data.microsoft.com^
+||vortex-win.data.microsoft.com^
+||settings-win.data.microsoft.com^
+||telemetry.microsoft.com^
+||watson.telemetry.microsoft.com^
+||watson.ppe.telemetry.microsoft.com^
+
+###############################################
+# SMART-TV TRACKING (Samsung, LG, Sony, Roku)
+###############################################
+||samsungacr.com^
+||samsungads.com^
+||lgsmartad.com^
+||sony.net^$third-party
+||api.sr.roku.com^
+||track.sr.roku.com^
+
+###############################################
+# GENERAL TRACKING / ANALYTICS
+###############################################
+||googletagmanager.com^
+||google-analytics.com^
+||analytics.google.com^
+||stats.wp.com^
+||matomo.cloud^
+||piwik.pro^
+||mixpanel.com^
+||segment.io^
+||hotjar.com^
+||newrelic.com^
+
+###############################################
+# AD NETWORKS (GLOBAL)
+###############################################
+||adnxs.com^
+||adform.net^
+||criteo.com^
+||criteo.net^
+||rubiconproject.com^
+||openx.net^
+||taboola.com^
+||outbrain.com^
+||revcontent.com^
+
+###############################################
+# MALWARE / PHISHING / BAD HOSTS
+###############################################
+||malwarebytes.com^$third-party
+||malwaredomainlist.com^
+||phishing.com^
+||badhost.com^
+||maliciousdomain.com^
+
+###############################################
+# TELEMETRY / BEACONS
+###############################################
+||beacon.krxd.net^
+||beacon.tapad.com^
+||beacon.rubiconproject.com^
+
+###############################################
+# MOBILE APP TRACKING
+###############################################
+||app-measurement.com^
+||adjust.com^
+||branch.io^
+||kochava.com^
+||appsflyer.com^
+||firebaseinstallations.googleapis.com^
+
+###############################################
+# END OF LIST
+###############################################
